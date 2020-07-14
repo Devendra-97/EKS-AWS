@@ -1,0 +1,8 @@
+apiVersion: storage.k8.io/v1
+kind: StorageClass
+metadata:
+   name: mysc1
+provisioner: kubernetes.io/aws-ebs
+parameters:
+  type: io1 
+ReClaimPolicy: Retain 
